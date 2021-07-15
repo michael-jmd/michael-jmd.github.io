@@ -1,2 +1,2 @@
-# michael-jmd.github.io
+# michjmd.github.io
 My personal website
