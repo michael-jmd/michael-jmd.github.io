@@ -5,9 +5,10 @@
 }
 
 :root {
-    --primario: rgba(255, 255, 255, 0);
-    --secundario: rgba(0,0,0,0);
+    --primario: rgba(255, 228, 205, 1);
+    --secundario: rgba(255, 179, 128,1);
 }
+
 html {
     font-size: 62.5%;
 }
@@ -19,7 +20,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(/img/LanternObon_Comp_Wireframe4.png);
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(/img/LanternObon_Comp_Wireframe5.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -50,26 +51,6 @@ header {
     justify-content: space-between;
     margin-right: 5%;
 
-}
-
-.nav-background .main-navigation a {
-    text-decoration: none;
-    color: white;
-
-    font-family:futura-pt;
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: .35em;
-    line-height: 1em;
-    
-}
-.nav-background .main-navigation a:hover{
-    text-decoration-line:underline;
-    text-decoration-thickness: 0.1rem;
-    text-underline-position: under;
-    transform: scale(1.1);
-    color: rgba(255, 228, 205, 0.993);
 }
 
 .logo-title {
@@ -115,7 +96,7 @@ header {
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(27, 27, 27, 0.8);
     position:absolute;
     bottom:0;
     width:100%;
@@ -129,10 +110,111 @@ footer {
 .footer-text {
     text-transform: uppercase;
     font-family:futura-pt;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 400;
     letter-spacing: .35em;
     line-height: 1em;
     color: white;
+}
+
+.nav-background .main-navigation .main-menu .close-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.nav-background .main-navigation .open-menu {
+    display: none;
+    font-size: 2rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.nav-background .main-navigation .main-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-background .main-navigation .main-menu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-family:futura-pt;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .35em;
+    line-height: 1em;
+}
+
+.nav-background .main-navigation .main-menu a:hover{
+    text-decoration-line:underline;
+    text-decoration-thickness: 0.1rem;
+    text-underline-position: under;
+    transform: scale(1.1);
+    color: var(--secundario);
+}
+
+@media (max-width: 800px) {
+
+    .nav-background {
+        height: 15vh;
+        display: block;
+    }
+    .nav-background .logo{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .nav-background .main-navigation {
+        width: 5rem;
+    }
+
+    .logo-title {
+        font-size: 1.5rem;
+        margin-top: 6%;
+    }
+
+    .logo-title span {
+        font-size: 1rem;
+    }
+
+    .logo-subtitle {
+        font-size: 0.7rem;
+    }
+
+    .nav-background .main-navigation {
+        display:block;
+    }
+
+    .nav-background .main-navigation .main-menu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 80, 120, 0.5);
+        transition: top 1s ease;
+        display: none;
+    }
+
+    .nav-background .main-navigation .main-menu .close-menu {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .nav-background .main-navigation .open-menu {
+        display: block;
+    }
+    
 }

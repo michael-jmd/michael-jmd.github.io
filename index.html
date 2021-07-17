@@ -7,7 +7,10 @@
     <title>Michael Magaña Technical Director</title>
     <!--<link rel="stylesheet" href="css/normalize.css">-->
     <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="css/fontawesome-free-5.15.3-web/css/all.css" as="style">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -18,15 +21,26 @@
                 <h1 class="logo-subtitle">Modeling - LookDev - Lighting - Compositing - Programming</h1>
             </div>
 
-            <nav class="main-navigation container">
-                <a href="#">Home</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="#">Blog</a>
-                <a href="#">About</a>
+            <nav class="main-navigation">
+                <div class="open-menu"> 
+                    <i class="fa fa-bars"></i> 
+                </div>
+
+                <ul class="main-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+
+                    <div class="close-menu"> 
+                        <i class="fa fa-times"></i> 
+                    </div>
+                </ul>
             </nav>
         </div>
 
         <section class="links-contact">
+
             <div class="contact-icons">
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -85,6 +99,7 @@
         </footer>
 
     </header>
+    <script src="/script/app.js"></script>
 </body>
 
 </html>
