@@ -61,6 +61,7 @@ header {
     letter-spacing: .35em;
     line-height: 1em;
     display: inline-block;
+    margin-top: 2%;
 }
 
 .logo-title span {
@@ -88,7 +89,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-left: auto;
-    margin-right: 5%;
+    margin-right: 6.3%;
 }
 
 .links-contact .contact-icons a:hover {
@@ -158,6 +159,20 @@ footer {
     color: var(--secundario);
 }
 
+@media (max-width: 1500px) {
+    .logo-title{
+        font-size: 2rem;
+    }
+
+    .logo-title span {
+        font-size: 1.5rem;
+    }
+
+    .logo-subtitle {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 800px) {
 
     .nav-background {
@@ -175,7 +190,7 @@ footer {
     }
 
     .logo-title {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
         margin-top: 6%;
     }
 
@@ -215,6 +230,11 @@ footer {
 
     .nav-background .main-navigation .open-menu {
         display: block;
+        margin-top: 92%;
+    }
+
+    .footer-text {
+        font-size: 0.7rem;
     }
     
 }
