@@ -161,29 +161,42 @@ footer {
 
 main{
     color: white;
-    background: linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.5));
+    background: linear-gradient(rgba(0,0,0, 0.85), rgba(0,50,100, 0.5));
     height: 80%;
     width: 90%;
     margin: auto;
     border-radius: 5rem;
+}
+
+main .main-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 main .progress-img {
     border-radius: 50%;
     width: 30%;
     height: auto;
-
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    margin-left: -15%;
-    margin-top: -25%;
+    display:none;
 }
 
-main .text-construction {
+main .perfil-foto {
+    width: 35rem;
+    border-radius: 10%;
+    position: relative;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+main .text-container {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 2%;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 3%;
+    margin: 2% 2%;
+}
+main .about-title {
     font-family: Monserrat;
     font-size: 4rem;
     font-style: normal;
@@ -192,9 +205,14 @@ main .text-construction {
     line-height: 1.5em;
     color: rgb(255, 255, 255);
     text-shadow: black 2px 5px;
+    color: var(--secundario);
+    text-transform: uppercase;
+}
 
-    margin-top: -20%;
-    text-align: center;
+main .about-text {
+    margin: 5% auto;
+    font-family: Monserrat;
+    color: white;
 }
 
 @media (max-width: 1500px) {
@@ -283,8 +301,19 @@ main .text-construction {
         width: 90%;
     }
 
-    main .text-construction {
+    main .main-section{
+        display: inline-block;
+    }
+
+    main .about-title {
         font-size: 2.5rem;
+    }
+
+    main .perfil-foto {
+        width: 20rem;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 5%;
     }
     
 }
