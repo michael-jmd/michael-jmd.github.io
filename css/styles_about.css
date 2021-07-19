@@ -161,39 +161,26 @@ footer {
 
 main{
     color: white;
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.5));
     height: 80%;
-    width: 30%;
+    width: 90%;
     margin: auto;
     border-radius: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: bkg_progress;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    
-
-}
-
-@keyframes bkg_progress {
-    0%   {background-color: rgba(0, 10, 20, 0.2);}
-    25%  {background-color: rgba(0, 10, 20, 0.4);}
-    50%  {background-color: rgba(0, 10, 20, 0.4);}
-    100% {background-color: rgba(0, 10, 20, 0.2);}
 }
 
 main .progress-img {
-    padding: 20%;
-    animation-name: salem;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-@keyframes salem {
-    0% {transform: scale(1);}
-    50% {transform: scale(1.2);}
-    100% {transform: scale(1);}
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: -15%;
+    margin-top: -25%;
 }
 
 main .text-construction {
@@ -224,7 +211,7 @@ main .text-construction {
     }
 
     main {
-        width: 40%;
+        width: 90%;
     }
 }
 
@@ -293,7 +280,7 @@ main .text-construction {
     }
 
     main {
-        width: 70%;
+        width: 90%;
     }
 
     main .text-construction {
