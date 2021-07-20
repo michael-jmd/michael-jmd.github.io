@@ -166,6 +166,7 @@ main{
     width: 90%;
     margin: auto;
     border-radius: 5rem;
+    overflow-y: auto;
 }
 
 main .main-section {
@@ -181,24 +182,37 @@ main .progress-img {
 
 main .perfil-foto {
     width: 35rem;
+    height: 100%;
     border-radius: 10%;
     position: relative;
     margin-top: 2%;
     margin-left: 2%;
+    box-shadow: 2px 2px 15px 15px rgba(0, 0, 0, 0.8);
+    filter: saturate(1);
+}
+main .perfil-foto:hover {
+    transform: scale(1.05);
+    filter: saturate(1.2);
 }
 
 main .text-container {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 2%;
     width: 100%;
-    height: auto;
     position: relative;
     padding: 3%;
     margin: 2% 2%;
+
+    font-family: Monserrat;
+    color: white;
+    font-size: 1.6rem;
+    font-style:normal;
+    font-weight: normal;
+    letter-spacing: .10em;
 }
 main .about-title {
     font-family: Monserrat;
-    font-size: 4rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 800;
     letter-spacing: .35em;
@@ -210,9 +224,44 @@ main .about-title {
 }
 
 main .about-text {
-    margin: 5% auto;
+    margin-top: 1%;
     font-family: Monserrat;
     color: white;
+    font-style:normal;
+    font-weight: normal;
+    letter-spacing: .10em;
+}
+main .about-introduction {
+    margin-top: 2%;
+
+}
+
+main .contact-title {
+    font-family: Monserrat;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: .35em;
+    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+    text-shadow: black 2px 5px;
+    color: var(--secundario);
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+
+main .contact-text {
+    margin-top: 2%;
+    font-family: Monserrat;
+    color: white;
+    font-size: 2.2rem;
+    font-style:normal;
+    font-weight: normal;
+    letter-spacing: .10em;
+}
+
+strong {
+    color: var(--primario);
 }
 
 @media (max-width: 1500px) {
@@ -230,6 +279,30 @@ main .about-text {
 
     main {
         width: 90%;
+        overflow-y: auto; 
+    }
+
+    main .main-section{
+        display: inline-block;
+    }
+
+    main .about-title {
+        font-size: 2.5rem;
+    }
+
+    main .perfil-foto {
+        width: 20rem;
+        left: 38%;
+        transform: translate(-50%);
+        margin-top: 5%;
+        transform:initial;
+    }
+
+    main .text-container {
+        width: 90%;
+        left: 48%;
+        transform: translate(-50%);
+        
     }
 }
 
@@ -299,6 +372,7 @@ main .about-text {
 
     main {
         width: 90%;
+        overflow-y: auto; 
     }
 
     main .main-section{
@@ -311,9 +385,16 @@ main .about-text {
 
     main .perfil-foto {
         width: 20rem;
-        left: 50%;
-        transform: translate(-50%);
+        left: 22%;
+        transform: translate(50%);
         margin-top: 5%;
+        transform:initial;
     }
-    
+
+    main .text-container {
+        width: 90%;
+        left: 48%;
+        transform: translate(-50%);
+        
+    }
 }
