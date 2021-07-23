@@ -55,7 +55,7 @@ header {
 }
 
 .logo-title {
-    font-family: Montserrat;
+    font-family: 'Arapey', serif;
     font-size: 3.2rem;
     font-style: normal;
     font-weight: 400;
@@ -70,7 +70,7 @@ header {
 }
 
 .logo-subtitle {
-    font-family: Monserrat;
+    font-family: 'Arapey', serif;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
@@ -145,8 +145,8 @@ footer {
     text-transform: uppercase;
     color: white;
     text-decoration: none;
-    font-family:futura-pt;
-    font-size: 1.2rem;
+    font-family: 'Arapey', serif;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     letter-spacing: .35em;
@@ -192,7 +192,8 @@ main section iframe {
 main section h2 {
     color: var(--terciario);
     font-size: 4rem;
-    font-family: Source Code Pro;
+    font-family: 'Arapey', serif;
+    letter-spacing: 3px;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -202,18 +203,18 @@ main section h2 {
 main section p {
     color: white;
     font-size: 2rem;
-    font-family: Monserrat;
+    font-family: 'Arapey', serif;
     margin-top: 1rem;
     text-align: center;
 }
 
 main section li {
-    margin-top: 5rem;
     list-style: none;
     text-align: center;
+    margin: 5rem auto;
 }
 main section a {
-    color: white;
+    color: var(--terciario);
     font-size: 2rem;
     height: 100%;
     width: 100%;
@@ -223,12 +224,22 @@ main section a {
     border-width: 3px;
     border-style: solid;
     background-color: transparent;
-    font-family: Source Code Pro;
+    font-family: 'Arapey', serif;
     text-transform: uppercase;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
     padding: 20px;
+    border-radius: 2rem;
+}
+
+main section li:hover{
+    transform: scale(1.1);
+}
+
+main section a:hover {
+    color: var(--secundario);
+    border-color: var(--secundario);
 }
 
 @media (max-width: 1500px) {
@@ -307,6 +318,17 @@ main section a {
 
     .footer-text {
         font-size: 0.7rem;
+    }
+
+    main section iframe {
+        width: 640px;
+        height: 360px;
+        transform: scale(0.65);
+    }
+
+    main section p {
+        font-size: 2rem;
+        margin: 0 20%;
     }
     
 }

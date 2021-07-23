@@ -7,6 +7,8 @@
 :root {
     --primario: rgba(255, 228, 205, 1);
     --secundario: rgba(255, 179, 128,1);
+    --terciario: rgb(136, 201, 255);
+    --subtitle: rgb(185, 224, 255);
 }
 
 html {
@@ -53,7 +55,6 @@ header {
 }
 
 .logo-title {
-    font-family: Montserrat;
     font-size: 3.2rem;
     font-style: normal;
     font-weight: 400;
@@ -61,6 +62,7 @@ header {
     line-height: 1em;
     display: inline-block;
     margin-top: 2%;
+    font-family: 'Arapey', serif;
 }
 
 .logo-title span {
@@ -68,13 +70,13 @@ header {
 }
 
 .logo-subtitle {
-    font-family: Monserrat;
+    font-family: 'Arapey', serif;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     letter-spacing: .35em;
     line-height: 2em;
-    color: rgba(255, 228, 205, 0.993);
+    color: var(--primario);
 }
 
 .links-contact {
@@ -143,8 +145,8 @@ footer {
     text-transform: uppercase;
     color: white;
     text-decoration: none;
-    font-family:futura-pt;
-    font-size: 1.2rem;
+    font-family: 'Arapey', serif;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     letter-spacing: .35em;
@@ -160,6 +162,61 @@ footer {
 
 }
 
+main section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+main section li {
+    list-style: none;
+    text-align: center;
+    margin: 5rem auto;
+}
+main section a {
+    color: var(--secundario);
+    font-size: 2rem;
+    height: 100%;
+    width: 100%;
+    border-color: var(--secundario);
+    letter-spacing: 3px;
+    text-align: center;
+    border-width: 3px;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Source Code Pro;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 2rem;
+    font-family: 'Arapey', serif;
+}
+
+main section li:hover{
+    transform: scale(1.1);
+}
+
+main section a:hover {
+    color: var(--terciario);
+    border-color: var(--terciario);
+}
+
+main section h2 {
+    color: white;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .35em;
+    line-height: 1em;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    text-shadow: 5px 1px 3px rgb(0, 0, 0);
+    font-family: 'Arapey', serif;
+}
 
 
 @media (max-width: 1500px) {
@@ -238,6 +295,11 @@ footer {
 
     .footer-text {
         font-size: 0.7rem;
+    }
+
+    main section h2 {
+        font-size: 4rem;
+        text-align: center;
     }
     
 }

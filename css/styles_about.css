@@ -56,7 +56,7 @@ header {
 }
 
 .logo-title {
-    font-family: Montserrat;
+    font-family: 'Arapey', serif;
     font-size: 3.2rem;
     font-style: normal;
     font-weight: 400;
@@ -71,7 +71,7 @@ header {
 }
 
 .logo-subtitle {
-    font-family: Monserrat;
+    font-family: 'Arapey', serif;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
@@ -146,8 +146,8 @@ footer {
     text-transform: uppercase;
     color: white;
     text-decoration: none;
-    font-family:futura-pt;
-    font-size: 1.2rem;
+    font-family: 'Arapey', serif;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     letter-spacing: .35em;
@@ -207,15 +207,15 @@ main .text-container {
     padding: 3%;
     margin: 2% 2%;
 
-    font-family: Monserrat;
+    font-family: 'Arapey', serif;
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-style:normal;
     font-weight: normal;
     letter-spacing: .10em;
 }
 main .about-title {
-    font-family: Monserrat;
+    font-family: 'Arapey', serif;
     font-size: 3rem;
     font-style: normal;
     font-weight: 800;
@@ -229,7 +229,7 @@ main .about-title {
 
 main .about-text {
     margin-top: 1%;
-    font-family: Monserrat;
+    font-family: 'Arapey', serif;
     color: white;
     font-style:normal;
     font-weight: normal;
@@ -241,7 +241,7 @@ main .about-introduction {
 }
 
 main .contact-title {
-    font-family: Monserrat;
+    font-family: 'Arapey', serif;
     font-size: 3rem;
     font-style: normal;
     font-weight: 800;
@@ -256,7 +256,7 @@ main .contact-title {
 
 main .contact-text {
     margin-top: 2%;
-    font-family: Monserrat;
+    font-family: 'Arapey', serif;
     color: white;
     font-size: 2.2rem;
     font-style:normal;

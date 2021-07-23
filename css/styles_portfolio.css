@@ -56,7 +56,7 @@ header {
 }
 
 .logo-title {
-    font-family: Montserrat;
+    font-family: 'Arapey', serif;
     font-size: 3.2rem;
     font-style: normal;
     font-weight: 400;
@@ -71,7 +71,7 @@ header {
 }
 
 .logo-subtitle {
-    font-family: Monserrat;
+    font-family: 'Arapey', serif;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
@@ -145,8 +145,8 @@ footer {
     text-transform: uppercase;
     color: white;
     text-decoration: none;
-    font-family:futura-pt;
-    font-size: 1.2rem;
+    font-family: 'Arapey', serif;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     letter-spacing: .35em;
@@ -334,6 +334,11 @@ main section ul li.active {
 
 iframe {
     margin: auto 0;
+}
+#popup iframe {
+    width: 1400px;
+    height: 787.5px;
+
     width: 100%;
     height: 100%;
 }
