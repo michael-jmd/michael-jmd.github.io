@@ -8,13 +8,18 @@
     <!--<link rel="stylesheet" href="css/normalize.css">-->
     <link rel="preload" href="css/styles_portfolio.css" as="style">
     <link rel="preload" href="css/fontawesome-free-5.15.3-web/css/all.css" as="style">
+    <link rel="preload" href="css/lightbox.min.css" as="style">
     <link href="css/styles_portfolio.css" rel="stylesheet">
     <link href="css/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/script/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="/script/popup.js"></script>
 
 </head>
 
 <body>
-    <header>
+    <header id="blur">
         <div class="nav-background">
             <div class="logo">
                 <h1 class="logo-title">Michael Magaña - <span>Technical Artist</span> </h1>
@@ -101,12 +106,13 @@
                 <div class="items">
                     <div class="itemBox Modeling">
                         <div class="image">
-                            <img src="/img/portfolio/camera1.jpg"> 
+                            <img src="/img/portfolio/camera1.jpg">
                         </div>
                         <div class="content">
                             <div>
-                                <h1>Title</h1>
+                                <h1>2016</h1>
                                 <p>Imagen realizada en el año 2016 como aprendizaje de shaders y lighting</p>
+                                <a href="/img/portfolio/camera1.jpg" data-lightbox="mygallery"><img></a>
                             </div>
                         </div>
                     </div>
@@ -119,32 +125,36 @@
                             <div>
                                 <h1>Title</h1>
                                 <p>Imagen realizada en el año 2016 como aprendizaje de shaders y lighting</p>
+                                <a href="/img/portfolio/Captura.JPG" data-lightbox="mygallery"><img></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="itemBox Lighting"> 
                         <div class="image">
-                            <img src="/img/portfolio/195300790_488026262523571_6926969263574990224_n.jpg"> 
+                            <img src="/img/LanternObon_Comp_v002.jpg"> 
                         </div>
 
                         <div class="content">
                             <div>
                                 <h1>Title</h1>
                                 <p>Imagen realizada en el año 2016 como aprendizaje de shaders y lighting</p>
+                                <a href="/img/LanternObon_Comp_v002.jpg" data-lightbox="mygallery"><img></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="itemBox Photography"> 
                         <div class="image">
-                            <img src="/img/portfolio/c-d-x-PDX_a_82obo-unsplash.jpg ">
+                            <img src="/img/portfolio/c-d-x-PDX_a_82obo-unsplash.jpg">
                         </div>
 
                         <div class="content">
                             <div>
                                 <h1>Title</h1>
                                 <p>Imagen realizada en el año 2016 como aprendizaje de shaders y lighting</p>
+                                <!--<a href="/img/portfolio/c-d-x-PDX_a_82obo-unsplash.jpg" onclick="toggle()" data-lightbox="mygallery"><img></a>-->
+                                <a href="#" onclick="toggle()"><img></a>
                             </div>
                         </div>
                     </div>
@@ -157,12 +167,18 @@
             <script src="/script/filter.js"></script>
     
         </main>
-        
+
         <footer>
             <p class="footer-text"> &#169; 2021 Michael Magaña - Technical Artist. All rights reserved.</p>
         </footer>
 
     </header>
+
+    <div id="popup">
+        <a href="#" class="close-iframe" onclick="toggle()">Close</a>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/71qoRPps9pA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
     <script src="/script/app.js"></script>
 </body>
 
