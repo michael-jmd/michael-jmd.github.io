@@ -36,7 +36,6 @@ header {
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-
 }
 
 .nav-background .logo {
@@ -134,6 +133,7 @@ footer {
 .nav-background .main-navigation .main-menu {
     display: flex;
     list-style: none;
+    margin: auto -10rem;
 }
 
 .nav-background .main-navigation .main-menu li a {
@@ -159,6 +159,8 @@ footer {
     color: var(--secundario);
 
 }
+
+
 
 @media (max-width: 1500px) {
     .logo-title{
