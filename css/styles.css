@@ -22,7 +22,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(/img/LanternObon_Comp_Wireframe5.png);
+    background-image: linear-gradient(rgba(0,0,0,0.8) 10%, rgba(0,0,0,0) 60%), url(/img/LanternObon_Comp_Wireframe5.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -218,6 +218,21 @@ main section h2 {
     font-family: 'Arapey', serif;
 }
 
+main section h3 {
+    color: rgb(255, 150, 20);
+    color: white;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .35em;
+    line-height: 1em;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    text-shadow: 5px 1px 3px rgb(0, 0, 0);
+    font-family: 'Arapey', serif;
+}
+
 
 @media (max-width: 1500px) {
     .logo-title{
@@ -277,6 +292,7 @@ main section h2 {
         justify-content: center;
         align-items: center;
         background: rgba(0, 80, 120, 0.5);
+        background: linear-gradient(rgba(0, 0, 0, 0.9) 20%, rgba(0,0,0,0.8) 80%);
         transition: top 1s ease;
         display: none;
     }
@@ -301,5 +317,8 @@ main section h2 {
         font-size: 4rem;
         text-align: center;
     }
-    
+    main section h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
 }
