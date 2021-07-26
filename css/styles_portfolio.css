@@ -176,6 +176,95 @@ main{
     font-family: Monserrat;
     background: none;
 }
+
+main .banner {
+    background: black;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    min-height: 340px;
+    max-height: 600px;
+}
+main .banner .masthead {
+    background-image: linear-gradient(rgba(0,0,0,0.0) 60%, rgba(0,0,0,0.8) 90%), url(/img/Banner.jpg);
+    width: 100%;
+    height: 450px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    min-height: 340px;
+    max-height: 600px;
+}
+
+main .banner .masthead .masthead-info {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+main .banner .masthead .masthead-info img {
+    border-radius: 50%;
+    width: 15rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.8);
+
+}
+
+main .banner .masthead .masthead-info h2 {
+    text-align: center;
+    font-family: 'Arapey', serif;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .35em;
+    line-height: 1em;
+    margin-top: 2%;
+}
+
+main .banner .masthead .masthead-info h3 {
+    text-align: center;
+    font-family: 'Arapey', serif;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .35em;
+    line-height: 1em;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+main .banner .masthead .masthead-info p {
+    text-align: center;
+    font-family: 'Arapey', serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .35em;
+    line-height: 1em;
+    margin-top: 2%;
+}
+
 header#blur.active {
     filter:blur(10px);
     pointer-events: none;
