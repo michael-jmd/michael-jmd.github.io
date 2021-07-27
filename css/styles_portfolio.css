@@ -520,18 +520,22 @@ iframe {
     }
 
     main section ul {
-        display: grid;
         margin-bottom: 1rem;
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     main section ul li{
-        min-width:300px;
+        min-width:30px;
         text-align: center;
+    }
+
+    .items {
+        justify-content: center;
     }
 
     .items .itemBox {
         width: 12rem;
-        max-height: 100%;
+        max-height: 12rem;
     }
 }

@@ -178,7 +178,7 @@ main{
 }
 
 main .banner {
-    background: black;
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -193,9 +193,10 @@ main .banner {
     align-items: flex-end;
     min-height: 340px;
     max-height: 600px;
+    height: 100px;
 }
 main .banner .masthead {
-    background-image: linear-gradient(rgba(0,0,0,0.0) 60%, rgba(0,0,0,0.8) 90%), url(/img/Banner.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.0) 60%, rgba(0,0,0,0.8) 90%), url(/img/LanternObon_Comp_Wireframe.jpg);
     width: 100%;
     height: 450px;
     padding-top: 40px;
@@ -265,6 +266,23 @@ main .banner .masthead .masthead-info p {
     margin-top: 2%;
 }
 
+main .banner .masthead .masthead-info a {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+main .banner .masthead .masthead-info a i {
+    color: white;
+    transform: scale(2);
+    background: black;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+main .banner .masthead .masthead-info a:hover i {
+    color: var(--terciario);
+}
+
 main .artwork {
     display: flex;
     justify-content: center;
@@ -298,7 +316,7 @@ main .artwork .images .container i {
     bottom: 3%;
     color: white;
     transform: scale(1.5);
-    background: black;
+    background: rgba(27, 27, 27, 0.5);
     width: 30px;
     height: auto;
     display: flex;
@@ -325,9 +343,58 @@ main .artwork .images iframe {
 }
 
 main .artwork .info {
-    background: greenyellow;
+    background: rgba(20, 20, 20, 0.9);
     width: 20%;
     min-height: 200px;
+    border-radius: 30px;
+}
+
+main .artwork .info .info-text {
+    background: rgba(0, 0, 0, 0.2);
+    margin: 5%;
+    padding: 5%;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgba(30, 30, 30, 0.8);
+
+}
+
+main .artwork .info .info-text h2{
+    color: white;
+    color: var(--terciario);
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: .35em;
+    line-height: 1em;
+    margin-bottom: 10%;
+}
+
+main .artwork .info .info-text h3{
+    color: white;
+    color: var(--subtitle);
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: .35em;
+    line-height: 1em;
+    margin-bottom: 10%;
+}
+
+main .artwork .info .info-text p{
+    color: white;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: .35em;
+    line-height: 1em;
+    margin-bottom: 50px;
 }
 
 
@@ -410,6 +477,14 @@ main .artwork .info {
         font-size: 0.7rem;
     }
 
+    main .artwork {
+        display: block;
+    }
+
+    main .artwork .images {
+        width: 100%;
+    }
+
     main .artwork .images iframe {
         max-width: 100%;
         width: 360px;
@@ -418,5 +493,9 @@ main .artwork .info {
 
     main .artwork .images .container i {
         transform: scale(1);
+    }
+
+    main .artwork .info {
+        width: 100%;
     }
 }
