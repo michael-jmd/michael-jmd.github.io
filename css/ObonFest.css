@@ -271,7 +271,7 @@ main .artwork {
 }
 
 main .artwork .images {
-    background: red;
+    background-color:rgba(0, 0, 0, 0.5);
     width: 80%;
     min-height: 200px;
     padding: 2%;
@@ -279,7 +279,10 @@ main .artwork .images {
     display: block;
 }
 
-main .artwork .images img {
+main .artwork .images .container {
+    position: relative;
+}
+main .artwork .images .container img {
     max-width: 100%;
     height: auto;
 
@@ -288,6 +291,27 @@ main .artwork .images img {
     margin-right: auto;
     padding: 5px;
 }
+
+main .artwork .images .container i {
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    color: white;
+    transform: scale(1.5);
+    background: black;
+    width: 30px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    transform: translate(-50 -50);
+    display: none;
+}
+
+main .artwork .images .container:hover i{
+    display: flex;
+} 
 
 main .artwork .images iframe {
     max-width: 100%;
@@ -384,5 +408,15 @@ main .artwork .info {
 
     .footer-text {
         font-size: 0.7rem;
+    }
+
+    main .artwork .images iframe {
+        max-width: 100%;
+        width: 360px;
+        height: 200px;
+    }
+
+    main .artwork .images .container i {
+        transform: scale(1);
     }
 }
