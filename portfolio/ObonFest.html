@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Magaña Technical Director</title>
     <!--<link rel="stylesheet" href="css/normalize.css">-->
-    <link rel="preload" href="css/styles_about.css" as="style">
+    <link rel="preload" href="/portfolio/ObonFest.css" as="style">
     <link rel="preload" href="css/fontawesome-free-5.15.3-web/css/all.css" as="style">
-    <link href="css/styles_about.css" rel="stylesheet">
+    <link rel="preload" href="css/lightbox.min.css" as="style">
+    <link href="/portfolio/ObonFest.css" rel="stylesheet">
     <link href="css/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arapey&family=DM+Serif+Text&family=Fuggles&display=swap" rel="stylesheet">
 
+    <script type="text/javascript" src="/script/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="/script/popup.js"></script>
+
 </head>
 
 <body>
-    <header>
+    <header id="blur">
         <div class="nav-background">
             <div class="logo">
                 <h1 class="logo-title">Michael Magaña - <span>Technical Artist</span> </h1>
@@ -92,52 +97,42 @@
         </section>
 
         <main>
-            <section class="main-section">
-                <img class="progress-img", src="/img/michael_soul.jpg", width="100%">
+            <div class="banner">
+                <div class="masthead">
+                    <div class="masthead-info">
+                        <img src="/img/michael_soul_2.jpg">
+                        <h2>Michael Magaña</h2>
+                        <h3>Technical Artist</h3>
+                        <p>email: mjonathancg@gmail.com</p>
+                        <p>tel: +52 4461067516</p>
+                    </div>
 
-                <img class="perfil-foto", src="/img/Michael_Perfil.jpg", width="100%">
-
-                <div class="text-container">
-                    <p class="about-title">About me..</p>
-                    <p class="about-text">Hello, everyone</p>
-                    <p class="about-introduction">my name is Michael Magaña. I'm a Mexican technical artist who graduated from the University of Guanajuato
-                        in 2016 with a bachelor's degree in Digital Arts.
-                        <br>
-                        <br>
-                        After I finished my studies, I have worked in the Mexican 3d animation industry for 5 years. In this time, I've had the opportunity to gain experience working on four feature films and two kids animated series. Working mainly as a Lighting artist, Lighting TD and LookDevelopment TD.
-                        <br>
-                        <br>
-                        I'm passionate about technology and art, and I'm particularly interested in learning about the physics of light, materials and cinematography. This is what drives me to keep practicing and gaining new skills in these areas. Everything I learn I try to apply to my work and share it with others.  This has aided my professional development and allowed me to assist in the resolution of issues that arise in the pipeline. 
-Because I've worked on both the technical and artistic side of projects, I'm familiar with the issues that exist or may occur in ach area, and can thus implement solutions, improve workflows, or streamline processes
-                        <br>
-                        <br>
-                        When I'm not studying, working or asleep, you can look for me to go to the movies, go to eat something or play some sport, I'm not very good at any of these things but I do it for fun.
-                        <br>
-                        <br>
-                        Thank you for taking the time to visit, please feel free to send me an email and give me feedback on my work, I would appreciate it very much.
-                    </p>
-
-                    <p class="contact-title">Contact..</p>
-                    <p class="contact-text">
-                        <strong>Mail:</strong>
-                        mjonathancg@gmail.com
-                        <br>
-                        <br>
-                        <strong>Tel:</strong>
-                        +52 4461067516
-                        <br>
-                        -----------------------
-                    </p>
                 </div>
-            </section>
+            </div>
+
+            <div class="artwork">
+                <section class="images">
+                    <a href="/img/LanternObon_Comp_Wireframe5.png" target="_blank"><img src="/img/LanternObon_Comp_Wireframe5.png"></a>
+                    <img src="/img/LanternObon_Comp_Wireframe4.png">
+                    <img src="/img/LanternObon_Comp_v002.jpg">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/71qoRPps9pA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img src="/img/michael_soul.jpg">
+                    <img src="/img/portfolio/camera1.jpg">
+                </section>
+
+                <section class="info">
+
+                </section>
+            </div>
     
         </main>
-        
+
         <footer>
             <p class="footer-text"> &#169; 2021 Michael Magaña - Technical Artist. All rights reserved.</p>
         </footer>
 
     </header>
+
     <script src="/script/app.js"></script>
 </body>
 

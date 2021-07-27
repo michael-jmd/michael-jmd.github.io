@@ -265,176 +265,47 @@ main .banner .masthead .masthead-info p {
     margin-top: 2%;
 }
 
-header#blur.active {
-    filter:blur(10px);
-    pointer-events: none;
-    user-select: none;
-}
-
-main section{
-    padding: 2rem;
-    width: auto;
-    margin: 4rem auto;
-}
-
-main section ul {
+main .artwork {
     display: flex;
-    margin-bottom: 1rem;
     justify-content: center;
 }
 
-main section ul li {
-    list-style: none;
-    background: #eee;
-    color: black;
-    padding: 0.8rem 2rem;
-    margin: 0.5rem;
-    letter-spacing: 0.1rem;
-    cursor: pointer;
-    border-radius: 20px;
-}
+main .artwork .images {
+    background: red;
+    width: 80%;
+    min-height: 200px;
+    padding: 2%;
 
-main section ul li.active {
-    background: #03a9f4;
-    color: #fff;
-}
-
-.items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-}
-
-.items .itemBox {
-    position: relative;
-    width: 30rem;
-    height: 30rem;
-    margin: 0.0rem;
-    overflow: hidden;
-}
-
-.items .itemBox:hover {
-    z-index: 1;
-    transform: scale(1.0);
-    /*box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);-->*/
-}
-
-.items .itemBox img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.items .itemBox .image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 50%, black);
-    mix-blend-mode: multiply;
-    opacity: 0;
-    transition: 0.2s;
-}
-
-.items .itemBox:hover .image::before {
-    opacity: 1;
-}
-
-.items .itemBox .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    display: flex;
-    padding: 2rem;
-    align-items: flex-end;
-}
-
-.items .itemBox .content h1{
-    color: var(--terciario);
-    transition: 0.2s;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    font-size: 2rem;
-    /*transform: translateY(20rem);*/
-    display: none;
-
-}
-
-.items .itemBox:hover .content h1{
-    transform: translateY(0);
     display: block;
-    transition-delay: 0.3s;
 }
 
-.items .itemBox .content p {
-    color: white;
-    /*transform: translateY(20rem);*/
-    transition: 0.2s;
-    font-size: 1.4rem;
-    display: none;
-}
+main .artwork .images img {
+    max-width: 100%;
+    height: auto;
 
-.items .itemBox:hover .content p {
-    transform: translateY(0);
     display: block;
-    transition-delay: 0.4s;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
 }
 
-.items .itemBox .content div a img{
-    opacity: 0;
+main .artwork .images iframe {
+    max-width: 100%;
+    width: 1080px;
+    height: 720px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
 }
 
-#popup {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
-    padding: 5rem;
-    box-shadow: 0 5px 3rem rgba(0, 0, 0, 0.3);
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 2rem;
-
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
+main .artwork .info {
+    background: greenyellow;
+    width: 20%;
+    min-height: 200px;
 }
 
-#popup.active {
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-}
-
-#popup a {
-    color: var(--terciario);
-    font-size: 3rem;
-    text-decoration-line: none;
-    float: right;
-    margin-top: -2rem;
-}
-
-iframe {
-    margin: auto 0;
-}
-#popup iframe {
-    width: 1400px;
-    height: 787.5px;
-
-    width: 100%;
-    height: 100%;
-}
 
 @media (max-width: 1500px) {
     .logo-title{
@@ -449,10 +320,6 @@ iframe {
         font-size: 1rem;
     }
 
-    .items .itemBox {
-        width: 20rem;
-        height: 20rem;
-    }
 }
 
 @media (max-width: 800px) {
@@ -517,21 +384,5 @@ iframe {
 
     .footer-text {
         font-size: 0.7rem;
-    }
-
-    main section ul {
-        display: grid;
-        margin-bottom: 1rem;
-        justify-content: center;
-    }
-
-    main section ul li{
-        min-width:300px;
-        text-align: center;
-    }
-
-    .items .itemBox {
-        width: 12.5rem;
-        height: 12.5rem;
     }
 }
