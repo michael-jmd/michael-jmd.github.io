@@ -178,7 +178,7 @@ main{
 }
 
 main .banner {
-    background: black;
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -193,9 +193,11 @@ main .banner {
     align-items: flex-end;
     min-height: 340px;
     max-height: 600px;
+    height: 100px;
 }
+
 main .banner .masthead {
-    background-image: linear-gradient(rgba(0,0,0,0.0) 60%, rgba(0,0,0,0.8) 90%), url(/img/Banner.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,0.8) 90%), url(/img/portfolio/UnRescateDeHuevitos/Cine.JPG);
     width: 100%;
     height: 450px;
     padding-top: 40px;
@@ -265,176 +267,142 @@ main .banner .masthead .masthead-info p {
     margin-top: 2%;
 }
 
-header#blur.active {
-    filter:blur(10px);
-    pointer-events: none;
-    user-select: none;
+main .banner .masthead .masthead-info a {
+    position: absolute;
+    top: 35%;
+    right: 5%;
 }
-
-main section{
-    padding: 2rem;
-    width: auto;
-    margin: 4rem auto;
-}
-
-main section ul {
-    display: flex;
-    margin-bottom: 1rem;
-    justify-content: center;
-}
-
-main section ul li {
-    list-style: none;
-    background: #eee;
-    color: black;
-    padding: 0.8rem 2rem;
-    margin: 0.5rem;
-    letter-spacing: 0.1rem;
-    cursor: pointer;
+main .banner .masthead .masthead-info a i {
+    color: white;
+    transform: scale(2);
+    background: black;
+    padding: 5px;
     border-radius: 20px;
 }
 
-main section ul li.active {
-    background: #03a9f4;
-    color: #fff;
+main .banner .masthead .masthead-info a:hover i {
+    color: var(--terciario);
 }
 
-.items {
+main .artwork {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
 }
 
-.items .itemBox {
+main .artwork .images {
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 80%;
+    min-height: 200px;
+    padding: 2%;
+
+    display: block;
+}
+
+main .artwork .images .container {
     position: relative;
-    width: 30rem;
-    height: 30rem;
-    margin: 0.0rem;
-    overflow: hidden;
 }
+main .artwork .images .container img {
+    max-width: 100%;
+    height: auto;
 
-.items .itemBox:hover {
-    z-index: 1;
-    transform: scale(1.0);
-    /*box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);-->*/
-}
-
-.items .itemBox img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.items .itemBox .image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 50%, black);
-    mix-blend-mode: multiply;
-    opacity: 0;
-    transition: 0.2s;
-}
-
-.items .itemBox:hover .image::before {
-    opacity: 1;
-}
-
-.items .itemBox .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    display: flex;
-    padding: 2rem;
-    align-items: flex-end;
-}
-
-.items .itemBox .content h1{
-    color: var(--terciario);
-    transition: 0.2s;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    font-size: 2rem;
-    /*transform: translateY(20rem);*/
-    display: none;
-
-}
-
-.items .itemBox:hover .content h1{
-    transform: translateY(0);
     display: block;
-    transition-delay: 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
 }
 
-.items .itemBox .content p {
-    color: white;
-    /*transform: translateY(20rem);*/
-    transition: 0.2s;
-    font-size: 1.4rem;
-    display: none;
-}
-
-.items .itemBox:hover .content p {
-    transform: translateY(0);
-    display: block;
-    transition-delay: 0.4s;
-}
-
-.items .itemBox .content div a img{
-    opacity: 0;
-}
-
-#popup {
-    position: fixed;
-    top: 40%;
+main .artwork .images .container i {
+    position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
-    padding: 5rem;
-    box-shadow: 0 5px 3rem rgba(0, 0, 0, 0.3);
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 2rem;
-
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
+    bottom: 3%;
+    color: white;
+    transform: scale(1.5);
+    background: rgba(27, 27, 27, 0.5);
+    width: 30px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    transform: translate(-50 -50);
+    display: none;
 }
 
-#popup.active {
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
+main .artwork .images .container:hover i{
+    display: flex;
+} 
+
+main .artwork .images iframe {
+    max-width: 100%;
+    width: 1080px;
+    height: 720px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
 }
 
-#popup a {
+main .artwork .images p {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main .artwork .info {
+    background: rgba(20, 20, 20, 0.9);
+    width: 20%;
+    min-height: 200px;
+    border-radius: 30px;
+}
+
+main .artwork .info .info-text {
+    background: rgba(0, 0, 0, 0.2);
+    margin: 5%;
+    padding: 5%;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgba(30, 30, 30, 0.8);
+
+}
+
+main .artwork .info .info-text h2{
+    color: white;
     color: var(--terciario);
-    font-size: 3rem;
-    text-decoration-line: none;
-    float: right;
-    margin-top: -2rem;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: .35em;
+    line-height: 1em;
+    margin-bottom: 10%;
 }
 
-iframe {
-    margin: auto 0;
+main .artwork .info .info-text h3{
+    color: white;
+    color: var(--subtitle);
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: .35em;
+    line-height: 1em;
+    margin-bottom: 10%;
 }
-#popup iframe {
-    width: 1400px;
-    height: 787.5px;
 
-    width: 100%;
-    height: 100%;
+main .artwork .info .info-text p{
+    color: white;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: .15em;
+    line-height: 1.5em;
+    margin-bottom: 50px;
 }
+
 
 @media (max-width: 1500px) {
     .logo-title{
@@ -449,10 +417,6 @@ iframe {
         font-size: 1rem;
     }
 
-    .items .itemBox {
-        width: 20rem;
-        height: 20rem;
-    }
 }
 
 @media (max-width: 800px) {
@@ -519,23 +483,25 @@ iframe {
         font-size: 0.7rem;
     }
 
-    main section ul {
-        margin-bottom: 1rem;
-        display: flex;
-        flex-wrap: wrap;
+    main .artwork {
+        display: block;
     }
 
-    main section ul li{
-        min-width:30px;
-        text-align: center;
+    main .artwork .images {
+        width: 100%;
     }
 
-    .items {
-        justify-content: center;
+    main .artwork .images iframe {
+        max-width: 100%;
+        width: 360px;
+        height: 200px;
     }
 
-    .items .itemBox {
-        width: 11rem;
-        max-height: 11rem;
+    main .artwork .images .container i {
+        transform: scale(1);
+    }
+
+    main .artwork .info {
+        width: 100%;
     }
 }
