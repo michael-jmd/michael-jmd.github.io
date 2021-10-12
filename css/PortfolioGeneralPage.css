@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primario: rgba(255, 228, 205, 1);
+    --secundario: rgba(255, 179, 128,1);
+    --terciario: rgb(136, 201, 255);
+    --subtitle: rgb(185, 224, 255);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px; /* 1rem = 10px */ 
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1)), url(/img/LanternObon_Comp_Wireframe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+}
+
+.nav-background {
+    width: 100%;
+    height: 13vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0));
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+
+.nav-background .logo {
+    width: 50%;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.nav-background .main-navigation {
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+
+}
+
+.logo-title {
+    font-family: 'Arapey', serif;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .35em;
+    line-height: 1em;
+    display: inline-block;
+    margin-top: 2%;
+}
+
+.logo-title span {
+    font-size: 2.5rem;
+}
+
+.logo-subtitle {
+    font-family: 'Arapey', serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .35em;
+    line-height: 2em;
+    color: var(--subtitle);
+}
+
+.links-contact {
+    background: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+}
+
+.links-contact .contact-icons {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 6.3%;
+}
+
+.links-contact .contact-icons a:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: rgba(27, 27, 27, 0.8);
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer-text {
+    text-transform: uppercase;
+    font-family:futura-pt;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .35em;
+    line-height: 1em;
+    color: white;
+}
+
+.nav-background .main-navigation .main-menu .close-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.nav-background .main-navigation .open-menu {
+    display: none;
+    font-size: 2rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.nav-background .main-navigation .main-menu {
+    display: flex;
+    list-style: none;
+    margin: auto -10rem;
+}
+
+.nav-background .main-navigation .main-menu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .35em;
+    line-height: 1em;
+}
+
+.nav-background .main-navigation .main-menu a:hover{
+    text-decoration-line:underline;
+    text-decoration-thickness: 0.1rem;
+    text-underline-position: under;
+    transform: scale(1.1);
+    color: var(--terciario);
+}
+
+main{
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,2,5,0.7));
+    height: 80%;
+    width: auto;
+    margin: auto;
+    border-radius: 1rem;
+    overflow-y: auto;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Monserrat;
+    background: none;
+}
+
+main .banner {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    min-height: 340px;
+    max-height: 600px;
+    height: 100px;
+}
+
+main .banner .masthead {
+    background-image: linear-gradient(rgba(0,0,0,0.0) 60%, rgba(0,0,0,0.8) 90%), url(/img/LanternObon_Comp_Wireframe.jpg);
+    width: 100%;
+    height: 450px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    min-height: 340px;
+    max-height: 600px;
+}
+
+main .banner .masthead .masthead-info {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+main .banner .masthead .masthead-info img {
+    border-radius: 50%;
+    width: 15rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.8);
+
+}
+
+main .banner .masthead .masthead-info h2 {
+    text-align: center;
+    font-family: 'Arapey', serif;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .35em;
+    line-height: 1em;
+    margin-top: 2%;
+}
+
+main .banner .masthead .masthead-info h3 {
+    text-align: center;
+    font-family: 'Arapey', serif;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .35em;
+    line-height: 1em;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+main .banner .masthead .masthead-info p {
+    text-align: center;
+    font-family: 'Arapey', serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .35em;
+    line-height: 1em;
+    margin-top: 2%;
+}
+
+main .banner .masthead .masthead-info a {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+main .banner .masthead .masthead-info a i {
+    color: white;
+    transform: scale(2);
+    background: black;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+main .banner .masthead .masthead-info a:hover i {
+    color: var(--terciario);
+}
+
+main .artwork {
+    display: flex;
+    justify-content: center;
+}
+
+main .artwork .images {
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 80%;
+    min-height: 200px;
+    padding: 2%;
+
+    display: block;
+}
+
+main .artwork .images .container {
+    position: relative;
+}
+main .artwork .images .container img {
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+main .artwork .images .container i {
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    color: white;
+    transform: scale(1.5);
+    background: rgba(27, 27, 27, 0.5);
+    width: 30px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    transform: translate(-50 -50);
+    display: none;
+}
+
+main .artwork .images .container:hover i{
+    display: flex;
+}
+
+main .artwork .images .container video {
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+main .artwork .images iframe {
+    max-width: 100%;
+    width: 1080px;
+    height: 720px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+main .artwork .info {
+    background: rgba(20, 20, 20, 0.9);
+    width: 20%;
+    min-height: 200px;
+    border-radius: 30px;
+}
+
+main .artwork .info .info-text {
+    background: rgba(0, 0, 0, 0.2);
+    margin: 5%;
+    padding: 5%;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgba(30, 30, 30, 0.8);
+
+}
+
+main .artwork .info .info-text h2{
+    color: white;
+    color: var(--terciario);
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: .35em;
+    line-height: 1em;
+    margin-bottom: 10%;
+}
+
+main .artwork .info .info-text h3{
+    color: white;
+    color: var(--subtitle);
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: .35em;
+    line-height: 1em;
+    margin-bottom: 10%;
+}
+
+main .artwork .info .info-text p{
+    color: white;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: .15em;
+    line-height: 1.5em;
+    margin-bottom: 50px;
+}
+
+
+@media (max-width: 1500px) {
+    .logo-title{
+        font-size: 2rem;
+    }
+
+    .logo-title span {
+        font-size: 1.5rem;
+    }
+
+    .logo-subtitle {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .nav-background {
+        height: 15vh;
+        display: block;
+    }
+    .nav-background .logo{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .nav-background .main-navigation {
+        width: 5rem;
+    }
+
+    .logo-title {
+        font-size: 1.9rem;
+        margin-top: 6%;
+    }
+
+    .logo-title span {
+        font-size: 1rem;
+    }
+
+    .logo-subtitle {
+        font-size: 0.7rem;
+    }
+
+    .nav-background .main-navigation {
+        display:block;
+    }
+
+    .nav-background .main-navigation .main-menu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 80, 120, 0.5);
+        transition: top 1s ease;
+        display: none;
+    }
+
+    .nav-background .main-navigation .main-menu .close-menu {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .nav-background .main-navigation .open-menu {
+        display: block;
+        margin-top: 92%;
+    }
+
+    .footer-text {
+        font-size: 0.7rem;
+    }
+
+    main .artwork {
+        display: block;
+    }
+
+    main .artwork .images {
+        width: 100%;
+    }
+
+    main .artwork .images iframe {
+        max-width: 100%;
+        width: 360px;
+        height: 200px;
+    }
+
+    main .artwork .images .container i {
+        transform: scale(1);
+    }
+
+    main .artwork .info {
+        width: 100%;
+    }
+}
