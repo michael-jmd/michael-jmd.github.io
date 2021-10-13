@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Magaña Technical Director</title>
     <!--<link rel="stylesheet" href="css/normalize.css">-->
-    <link rel="preload" href="css/styles_reel.css" as="style">
+    <link rel="preload" href="/css/PortfolioGeneralPage.css" as="style">
     <link rel="preload" href="css/fontawesome-free-5.15.3-web/css/all.css" as="style">
-    <link href="css/styles_reel.css" rel="stylesheet">
+    <link rel="preload" href="css/lightbox.min.css" as="style">
+    <link href="/css/PortfolioGeneralPage.css" rel="stylesheet">
     <link href="css/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arapey&family=DM+Serif+Text&family=Fuggles&display=swap" rel="stylesheet">
 
+    <script type="text/javascript" src="/script/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="/script/popup.js"></script>
+
 </head>
 
 <body>
-    <header>
+    <header id="blur">
         <div class="nav-background">
             <div class="logo">
                 <h1 class="logo-title">Michael Magaña - <span>Technical Artist</span> </h1>
@@ -92,22 +97,56 @@
         </section>
 
         <main>
-            <section>
-                <h2>2020 Reel</h2>
-                <!--<iframe title="vimeo-player" src="https://player.vimeo.com/video/504182093" width="640" height="360" frameborder="0" allowfullscreen></iframe>-->
-                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/630815538?h=8c49fcf413&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="LightingReel2020"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                <p>Please contact me at mjonathancg@gmail.com for the demo reel password.</p>
-                <li><a href="#">Breakdown</a></li>
-            </section>
+            <div class="banner">
+                <div class="masthead">
+                    <div class="masthead-info">
+                        <img src="/img/michael_soul_2.jpg">
+                        <h2>Michael Magaña</h2>
+                        <h3>Technical Artist</h3>
+                        <p>email: mjonathancg@gmail.com</p>
+                        <p>tel: +52 4461067516</p>
+                        <a href="#" class="back"><i class="fas fa-times"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="artwork">
+                <section class="images">
+
+                    <div class="container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/71qoRPps9pA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    
+                </section>
+
+                <section class="info">
+                    <div class="info-text">
+                        <h2>LookDev Tool Development</h2>
+                        <p>2018 - Responsible for all aspects
+                            <br>
+                            <br>
+                            I developed this tool for automatize my workflow in LookDevelopment.
+                            The lightrig is fully calibrated to get physically correct materials.
+                            This tool is compatible with Renderman, Arnold and Redshift for maya.
+                        </p>
+                        <h3>Software Used</h3>
+                        <p>Python - PyMel - PyQt</p>
+                    </div>
+
+                </section>
+            </div>
     
         </main>
-        
+
         <footer>
             <p class="footer-text"> &#169; 2021 Michael Magaña - Technical Artist. All rights reserved.</p>
         </footer>
 
     </header>
+
     <script src="/script/app.js"></script>
+    <script src="/script/back.js"></script>
 </body>
 
 </html>
